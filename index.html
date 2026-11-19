@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chiquito ni Theo in Manila | Sneaker Shop</title>
+<meta name="description" content="Quality shoes built for you. Basketball, running, rubber and Jordan sneakers in Manila.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icons used across the page (defined once, reused with <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M3 4h3l2.5 11h9.5l2-8H7"/></symbol>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
+</svg>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- 1. HEADER -->
+<header class="header"><div class="c bar">
+<a href="#home" class="logo">Chiquito ni Theo<small>in Manila</small></a>
+<button type="button" class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+<nav class="nav" id="nav" aria-label="Main"><a href="#home">Home</a><a href="#why">About the Shop</a><a href="#products">Products</a><a href="#contact">Contact</a></nav>
+<input class="in search" id="search" type="search" aria-label="Search sneakers" placeholder="Search sneakers">
+<button type="button" class="ib cartbtn" id="cartBtn" aria-label="Cart, 0 items"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg><span class="badge" id="cartCount">0</span></button>
+</div></header>
+
+<main>
+<!-- 2. HERO -->
+<section id="home" class="hero"><div class="c hero-grid">
+<div><h1>QUALITY SHOES.<span>BUILT FOR YOU.</span></h1>
+<p class="lede">[One line about the shop: fresh pairs for the court, the road and the street, straight from Manila.]</p>
+<div class="btns"><a class="btn r" href="#products">Shop Now</a><a class="btn o" href="#categories">View Collection</a></div>
+<div class="chips"><a class="chip" href="#products" data-cat="basketball">Basketball</a><a class="chip" href="#products" data-cat="running">Running</a><a class="chip" href="#products" data-cat="rubber">Rubber</a><a class="chip" href="#products" data-cat="jordan">Jordan</a></div></div>
+<img class="hero-img" src="images/hero.svg" alt="Red high-top sneaker beside a basketball">
+</div></section>
+
+<!-- 3. FEATURED PRODUCTS -->
+<section id="products" class="sec"><div class="c">
+<h2 class="h2">Featured Products</h2>
+<p class="filter-note" id="filterNote" hidden><span id="filterText"></span> <button type="button" class="link" id="clearFilter">Clear filter</button></p>
+<div class="grid products" id="productGrid">
+<article class="card product" data-name="red/white/black high-top basketball" data-cats="basketball jordan"><div class="pimg"><img src="images/shoe-1.svg" alt="Red/White/Black High-Top" loading="lazy"></div><p class="tag">BASKETBALL</p><h3>Red/White/Black High-Top</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add Red/White/Black High-Top to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save Red/White/Black High-Top to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+<article class="card product" data-name="grey running shoe running" data-cats="running"><div class="pimg"><img src="images/shoe-2.svg" alt="Grey Running Shoe" loading="lazy"></div><p class="tag">RUNNING</p><h3>Grey Running Shoe</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add Grey Running Shoe to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save Grey Running Shoe to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+<article class="card product" data-name="black basketball shoe basketball" data-cats="basketball"><div class="pimg"><img src="images/shoe-3.svg" alt="Black Basketball Shoe" loading="lazy"></div><p class="tag">BASKETBALL</p><h3>Black Basketball Shoe</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add Black Basketball Shoe to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save Black Basketball Shoe to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+<article class="card product" data-name="white/grey retro sneaker retro" data-cats="retro"><div class="pimg"><img src="images/shoe-4.svg" alt="White/Grey Retro Sneaker" loading="lazy"></div><p class="tag">RETRO</p><h3>White/Grey Retro Sneaker</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add White/Grey Retro Sneaker to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save White/Grey Retro Sneaker to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+<article class="card product" data-name="neon-green running shoe running" data-cats="running"><div class="pimg"><img src="images/shoe-5.svg" alt="Neon-Green Running Shoe" loading="lazy"></div><p class="tag">RUNNING</p><h3>Neon-Green Running Shoe</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add Neon-Green Running Shoe to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save Neon-Green Running Shoe to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+<article class="card product" data-name="black foam clog rubber" data-cats="rubber"><div class="pimg"><img src="images/shoe-6.svg" alt="Black Foam Clog" loading="lazy"></div><p class="tag">RUBBER</p><h3>Black Foam Clog</h3><p class="price">₱[price]</p><div class="prow"><button type="button" class="ib add" aria-label="Add Black Foam Clog to cart"><svg class="ico" aria-hidden="true"><use href="#cart"/></svg></button><button type="button" class="ib fav" aria-pressed="false" aria-label="Save Black Foam Clog to wishlist"><svg class="ico" aria-hidden="true"><use href="#heart"/></svg></button></div></article>
+</div>
+<p class="mut nomatch" id="noMatch" hidden>No sneakers match that yet. Try another search or clear the filter.</p>
+</div></section>
+
+<!-- 4. WHY WE'RE DIFFERENT -->
+<section id="why" class="sec nopt"><div class="c">
+<h2 class="h2">Why We’re Different</h2>
+<div class="grid why">
+<img class="photo" src="images/shelf.svg" alt="Shelves of sneakers in the shop" loading="lazy">
+<div class="why-text"><p>[Two short sentences about the shop’s story and why Manila sneaker fans choose it.]</p><div class="btns"><a class="btn r" href="#products">Shop Now</a><a class="btn k" href="#contact">Visit Us</a></div></div>
+<div class="feats"><div class="card feat"><b>Authentic pairs</b><p class="mut">[One-line benefit]</p></div><div class="card feat"><b>Every style, every size</b><p class="mut">[One-line benefit]</p></div><div class="card feat"><b>Friendly local service</b><p class="mut">[One-line benefit]</p></div><div class="card feat"><b>Care for the planet</b><p class="mut">[One-line benefit]</p></div></div></div></div></section>
+
+<!-- 5. SHOP BY CATEGORY -->
+<section id="categories" class="sec nopt"><div class="c">
+<h2 class="h2">Shop by Category</h2>
+<div class="grid cats"><a class="catcard" href="#products" data-cat="basketball"><img src="images/cat-basketball.svg" alt="" loading="lazy"><span>Basketball</span></a><a class="catcard" href="#products" data-cat="running"><img src="images/cat-running.svg" alt="" loading="lazy"><span>Running</span></a><a class="catcard" href="#products" data-cat="jordan"><img src="images/cat-jordan.svg" alt="" loading="lazy"><span>Jordan</span></a><a class="catcard" href="#products" data-cat="accessories"><img src="images/cat-accessories.svg" alt="" loading="lazy"><span>Accessories</span></a></div></div></section>
+
+<!-- 6. CUSTOMER LOVE -->
+<section class="sec nopt"><div class="c">
+<h2 class="h2">Customer Love</h2>
+<div class="grid reviews"><figure class="card review"><div class="who"><span class="av" style="background:#2B1A14">A</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#E02424">B</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#7a5342">C</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#2B1A14">D</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#E02424">E</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure></div>
+<div class="grid reviews more" id="moreReviews" hidden><figure class="card review"><div class="who"><span class="av" style="background:#7a5342">F</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#2B1A14">G</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure><figure class="card review"><div class="who"><span class="av" style="background:#E02424">H</span><b>[Customer name]</b></div><p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p><blockquote class="mut">[Review text]</blockquote></figure></div>
+<div class="btns center"><button type="button" class="btn k" id="moreBtn" aria-expanded="false">View More</button><a class="btn r" href="#contact" id="writeReview">Write a Review</a></div>
+</div></section>
+
+<!-- 7. CTA BANNER -->
+<section class="cta"><h2>YOUR NEXT PAIR IS WAITING.</h2><a class="btn r" href="#products">Shop Now</a></section>
+
+<!-- 8. CONTACT -->
+<section id="contact" class="sec"><div class="c grid two">
+<form class="card form" id="form" novalidate><h2 class="h2 small">Get in touch</h2>
+<label for="fname">Name</label><input id="fname" class="in box" type="text" autocomplete="name">
+<label for="femail">Email</label><input id="femail" class="in box" type="email" autocomplete="email">
+<label for="fmsg">Message</label><textarea id="fmsg" class="in box" rows="4"></textarea>
+<p class="error" id="formError" role="alert"></p>
+<button class="btn r" type="submit">Send Message</button></form>
+<div class="store"><img class="photo" src="images/store.svg" alt="Inside the sneaker store" loading="lazy">
+<div class="infocard"><b>Store hours</b> [Hours]<br><b>Phone</b> [Phone]<br><b>Email</b> [Email]<br><b>Address</b> [Address, Manila]</div></div>
+</div></section>
+
+<!-- 9. MAP -->
+<section class="mapsec"><div class="c"><div class="map"><img src="images/map.svg" alt="Map showing the shop location" loading="lazy">
+<div class="card maplabel"><b>Chiquito ni Theo in Manila</b><br><span class="mut">[Street address, Manila]</span></div></div></div></section>
+</main>
+
+<!-- 10. FOOTER -->
+<footer class="footer"><div class="c grid foot">
+<div><div class="logo light">Chiquito ni Theo<small>in Manila</small></div><p>&copy; <span id="year"></span> All rights reserved.</p></div>
+<div><b>Quick links</b><p><a href="#home">Home</a><br><a href="#why">About the Shop</a><br><a href="#products">Products</a><br><a href="#contact">Contact</a></p></div>
+<div><b>Contact</b><p>[Phone]<br>[Email]<br>[Address, Manila]</p></div>
+<div><b>Hours</b><p>[Opening hours]</p></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
